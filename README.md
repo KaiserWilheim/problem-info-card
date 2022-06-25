@@ -39,7 +39,7 @@
 <div id="problem-info-from">SDOI 2022<br>SXOI 2022</div>
 <div id="problem-info-difficulty">NOI/NOI+/CTSC</div>
 <div id="problem-info-color">#0e1d69</div>
-<div id="problem-info-submit"><ul><li><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P8353">Luogu P8353</a></li><li><a target="_blank" rel="noopener" href="https://loj.ac/p/3725">LibreOJ #3725</a></li></ul></div>
+<div id="problem-info-submit"><ul><li><a href="https://www.luogu.com.cn/problem/P8353">Luogu P8353</a></li><li><a href="https://loj.ac/p/3725">LibreOJ #3725</a></li></ul></div>
 ```
 
 解释：
