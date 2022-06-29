@@ -6,9 +6,9 @@
 }
 
 .problem-card-inner {
-  color: #000000;
+  color: var(--text-color);
   visibility: visible;
-  background: #ffffff;
+  background: var(--content-bg-color);
   padding: 18px;
   text-align: center;
   box-shadow: $box-shadow;
@@ -21,11 +21,12 @@
 
   caption{
     font-size: 1.4em;
-    color: #000000;
+    color: var(--text-color);
   }
 
   tr>:first-child {
     font-size: .8em;
+    min-width: 48px;
     color: $grey-dark;
   }
 
