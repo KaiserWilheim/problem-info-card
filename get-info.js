@@ -2,7 +2,6 @@ function getProblemCardInfo(){
   var elem = document.getElementById("problem-card-vis");
   var tar = document.getElementById("problem-card");
   if(elem === null){
-    elem.innerHTML = "";
     tar.style.display = "none";
     throw new Error("Problem card is hidden");
   }
@@ -66,3 +65,17 @@ function getProblemCardInfo(){
   elem.innerHTML = "";
 }
 getProblemCardInfo();
+var pre = document.getElementById("problem-card").style.display;
+setInterval("getProblemStatus()", 25)
+function getProblemStatus(){
+  var width = document.body.clientWidth;
+  if(width <= 991){
+    document.getElementById("problem-card").style.display = "none";
+    return;
+  }else{
+    document.getElementById("problem-card").style.display = pre;
+  }
+  var height = "";
+  height += (document.getElementById("sidebar").offsetHeight + 36) + "px";
+  document.getElementById("problem-card").style.top = height;
+}

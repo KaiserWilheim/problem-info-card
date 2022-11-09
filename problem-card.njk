@@ -25,19 +25,3 @@
       </table>
     </div>
   </aside>
-
-  <script>
-  setInterval("getProblemStatus()", 25)
-  function getProblemStatus(){
-    var width = document.body.clientWidth;
-    if(width <= 991){
-      document.getElementById("problem-card").style.display = "none";
-      return;
-    }else{
-      document.getElementById("problem-card").style.display = "inherit";
-    }
-    var height = "";
-    height += (document.getElementById("sidebar").offsetHeight + 36) + "px";
-    document.getElementById("problem-card").style.top = height;
-  }
-  </script>
